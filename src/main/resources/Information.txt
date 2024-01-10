@@ -1,0 +1,105 @@
+IMP LINKS
+=============
+
+1. Java Collections 
+	
+	https://www.javatpoint.com/collections-in-java
+	
+	
+	https://www.geeksforgeeks.org/collections-in-java-2/
+
+
+
+
+
+DB QUERIES
+================
+
+select * from employee
+
+
+--To find Max Salary--
+
+select Max(salary) as Max_Salary from employee 
+
+--To find Min Salary--
+
+select Min(salary) as Min_Salary from employee 
+
+--To find Nth Highest Salary--
+
+select * from employee
+
+select  salary from employee where salary in(select distinct salary from employee  order by salary desc limit 4)  order by salary limit 1 
+
+select name from employee limit 3
+
+
+
+--To find Nth Lowest Salary--
+
+select * from employee
+
+select salary from employee where salary in(select salary from employee  order by salary asc limit 4)  order by salary  desc limit 1 
+
+
+
+--To find second highest salary--
+
+select max(salary) from employee where salary not in(select max(salary) from employee )
+
+--To find second lowest salary--
+
+select * from employee
+
+select min(salary) from employee where salary not in(select min(salary) from employee )
+
+select salary, case("name") 
+when 'Raghu' then salary*2 end
+as double_salary from employee
+
+select salary, case 
+when (salary > 30000)
+then 'true' end
+from employee
+
+
+
+select name, case gender
+when 'male' then 'Huduga'
+when 'female' then 'Hudugi'
+end
+from student
+
+--Updating male to female and female to male using case statement--
+
+update student set gender = case gender
+when 'male' then  'female'
+when 'female'  then 'male'
+end
+
+select * from student
+
+//
+Select email from employee group by email
+
+
+SELECT 
+    email, 
+    COUNT(email)
+FROM
+    contacts
+GROUP BY email
+HAVING COUNT(email) > 1;
+
+
+
+
+************************
+
+TOPICS
+
+1. JAVA
+2. Database
+3. Selenium Stuff
+4. Selenium Framework

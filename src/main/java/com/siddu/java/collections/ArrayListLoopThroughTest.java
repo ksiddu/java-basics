@@ -55,6 +55,15 @@ public class ArrayListLoopThroughTest {
 			System.out.println("Element: " + list.get(index++));
 		}
 
+		// 6. using the java streams and parallelStream
+		System.out.println("***** using  java streams *****");
+
+		list.stream().forEach(e -> System.out.println("Element: " + e));
+
+		list.stream().forEachOrdered(e -> System.out.println("Element: " + e));
+
+		list.parallelStream().forEachOrdered(e -> System.out.println("Element: " + e));
+
 	}
 
 }

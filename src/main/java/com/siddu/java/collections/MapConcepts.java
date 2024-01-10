@@ -1,7 +1,9 @@
 package com.siddu.java.collections;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 public class MapConcepts {
@@ -36,6 +38,24 @@ public class MapConcepts {
 
 		// 3. using forEach
 		map.forEach((k, v) -> System.out.println("key: " + k + " value: " + v));
+
+		// 4. using stream forEach and entrySet()
+		map.entrySet().stream()
+				.forEach((entry) -> System.out.println("key: " + entry.getKey() + " value: " + entry.getValue()));
+
+		// 5. using parallelStream forEach and entrySet()
+		map.entrySet().parallelStream().forEachOrdered(
+				(entry) -> System.out.println("key: " + entry.getKey() + " value: " + entry.getValue()));
+
+		// 6. using iterator and entrySet()
+
+		Iterator<Map.Entry<String, Integer>> ite = map.entrySet().iterator();
+
+		for (Iterator<Entry<String, Integer>> i = ite; i.hasNext();) {
+			Map.Entry<String, Integer> entry = (Entry<String, Integer>) i.next();
+			System.out.println("key: " + entry.getKey() + " value: " + entry.getValue());
+		}
+
 	}
 
 }

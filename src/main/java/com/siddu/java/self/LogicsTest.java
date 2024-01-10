@@ -13,7 +13,7 @@ public class LogicsTest {
 		boolean flag = true;
 		// prime numbers : 1, 2, 3, 5, 7, 11 (a number divisible by 1 and itself)
 		for (int i = 2; i <= n / 2; i++) {
-			if (i % 2 == 0) {
+			if (n % i == 0) {
 				flag = false;
 			}
 		}
@@ -88,7 +88,7 @@ public class LogicsTest {
 
 		for (Character c : set) {
 
-			if (map.get(c) > 2) {
+			if (map.get(c) >= 2) {
 				System.out.println(c + " is a duplicate character");
 			}
 		}
