@@ -23,13 +23,19 @@ public class ArrayListConcepts {
 		// 10. size()
 		// 11. clear()
 		// 12. isEmpty()
+		// 13. hashCode()
+		// 14. equals()
+		// 15. iterator()
+		// 16. toArray()
+		// 17. toArray(T[] a)
 
 		// characteristics:
 		// 1. ordered collection of elements. i.e., maintains insertion order
 		// 2. contains duplicate elements
 		// 3. random access using the index of the elements
 		// 4. used dynamic array to store the elements
-		// 5. manipulation is slow since shifting is required [whenever we delete or insert an element]
+		// 5. manipulation is slow since shifting is required [whenever we delete or
+		// insert an element]
 		// 6. non-synchronized (not thread safe)
 
 		List<Integer> list1 = new ArrayList<>();
@@ -51,7 +57,7 @@ public class ArrayListConcepts {
 		System.out.println("List print: " + list1);
 
 		// Iterating ways: for, for-each, iterator
-		
+
 		// for loop
 		System.out.println("==================================");
 		System.out.println("for loop traversing / iterating");
@@ -114,12 +120,26 @@ public class ArrayListConcepts {
 		System.out.println("================================");
 		System.out.println("ArrayList elements after sort: " + list3);
 		System.out.println("================================");
-		
+
 		Collections.sort(list3, Collections.reverseOrder());
-		
+
 		System.out.println("================================");
 		System.out.println("ArrayList elements after descending sort: " + list3);
 		System.out.println("================================");
+
+		// list element sort using Collections utility class in java.util package
+		List<Integer> list4 = new ArrayList<>();
+
+		list4.add(1);
+		list4.add(2);
+		list4.add(3);
+		list4.add(4);
+		list4.add(5);
+		
+		list4.set(0, 10);
+		list4.add(1, 20);
+		
+		System.out.println("ArrayList elements after settting first element: " + list4);
 
 	}
 

@@ -1,9 +1,11 @@
 package com.siddu.java.collections;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class ArrayConcepts {
 
+	// https://www.codejava.net/java-core/collections/sorting-arrays-examples-with-comparable-and-comparator
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -43,6 +45,16 @@ public class ArrayConcepts {
 		System.out.println("twoDArray [1] before sort elements :" + Arrays.toString(twoDArray[1]));
 		Arrays.sort(twoDArray[1]);
 		System.out.println("twoDArray [1] sort elements :" + Arrays.toString(twoDArray[1]));
+		// Arrays.sort(twoDArray[1], Arrays.());
+
+		String[] fruits = { "Orange", "Grape", "Apple", "Lemon", "Banana" };
+
+		Arrays.sort(fruits);
+		System.out.println("Alphabetical order: " + Arrays.toString(fruits));
+
+		Arrays.sort(fruits, Collections.reverseOrder());
+		System.out.println("Reverse-alphabetical order: " + Arrays.toString(fruits));
+
 	}
 
 }

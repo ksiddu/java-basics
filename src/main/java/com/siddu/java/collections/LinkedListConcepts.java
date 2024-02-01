@@ -1,7 +1,6 @@
 package com.siddu.java.collections;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class LinkedListConcepts {
 
