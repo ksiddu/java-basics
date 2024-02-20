@@ -127,7 +127,7 @@ public class ArrayListConcepts {
 		System.out.println("ArrayList elements after descending sort: " + list3);
 		System.out.println("================================");
 
-		// list element sort using Collections utility class in java.util package
+		// use set method to update specific list element
 		List<Integer> list4 = new ArrayList<>();
 
 		list4.add(1);
@@ -135,10 +135,10 @@ public class ArrayListConcepts {
 		list4.add(3);
 		list4.add(4);
 		list4.add(5);
-		
+
 		list4.set(0, 10);
 		list4.add(1, 20);
-		
+
 		System.out.println("ArrayList elements after settting first element: " + list4);
 
 	}

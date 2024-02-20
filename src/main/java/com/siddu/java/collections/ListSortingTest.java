@@ -19,13 +19,13 @@ public class ListSortingTest {
 
 		System.out.println("Before sort elements: " + list);
 
-		System.out.println("List elements: " + list);
-
 		Collections.sort(list);
 
 		System.out.println("Sorting in ascending order elements: " + list);
+
+		// in descending order: use Collections.reverseOrder()
 		Collections.sort(list, Collections.reverseOrder());
-		System.out.println("List elements: " + list);
+		System.out.println("Sorting in descending order elements: " + list);
 
 	}
 

@@ -31,9 +31,9 @@ public class SetConcepts {
 		set1.add("Vinayak");
 		set1.add(null);
 
-		System.out.println("Elements of a set: " + set1);
+		System.out.println("Elements of a HashSet: " + set1);
 
-		System.out.println("Size of a set: " + set1.size());
+		System.out.println("Size of a HashSet: " + set1.size());
 
 		Iterator<String> ite = set1.iterator();
 
@@ -41,7 +41,7 @@ public class SetConcepts {
 			System.out.println("HashSet Element: " + ite.next());
 		}
 
-		// 1. maintains insertion order
+		// 1. LinkedHashSet maintains insertion order
 
 		Set<String> set2 = new LinkedHashSet<>();
 
@@ -72,8 +72,7 @@ public class SetConcepts {
 		set3.add("Ajay");
 
 		System.out.println("Elements of a TreeSet: " + set3);
-		
-		
+
 		Set<Integer> set4 = new TreeSet<Integer>();
 		set4.add(100);
 		set4.add(87);
@@ -81,11 +80,9 @@ public class SetConcepts {
 		set4.add(87);
 		set4.add(2);
 		set4.add(5);
-		//set4.add(null);
-		
+		// set4.add(null);
+
 		System.out.println("Elements of a TreeSet: " + set4);
-		
-        
 
 	}
 

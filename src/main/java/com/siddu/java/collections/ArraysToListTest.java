@@ -2,6 +2,7 @@ package com.siddu.java.collections;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -35,6 +36,11 @@ public class ArraysToListTest {
 		ArrayList<Integer> list3 = Arrays.stream(numbers2).collect(Collectors.toCollection(ArrayList::new));
 
 		System.out.println("ArrayList list3 array elements : " + list3);
+
+		Integer[] numbers4 = { 1, 3, 9, 8, 7 };
+		LinkedList<Integer> list4 = Arrays.stream(numbers2).collect(Collectors.toCollection(LinkedList::new));
+
+		System.out.println("LinkedList list4 array elements : " + list3);
 
 	}
 
