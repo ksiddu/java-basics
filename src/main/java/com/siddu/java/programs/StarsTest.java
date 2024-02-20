@@ -19,7 +19,7 @@ public class StarsTest {
 	
 	
 	
-		for (int k = 5; k >= 1; k--) {
+		for (int k = 4; k >= 1; k--) {
 
 			for (int l = 1; l <= k; l++) {
 

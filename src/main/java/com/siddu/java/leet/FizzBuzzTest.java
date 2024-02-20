@@ -5,7 +5,7 @@ public class FizzBuzzTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int n = 16;
+		int n = 15;
 
 		for (int i = 1; i <= n; i++) {
 
@@ -21,10 +21,11 @@ public class FizzBuzzTest {
 			} else {
 				System.out.print(i);
 			}
-			if(i==n) {
-				break;
+			if(i < n) {
+				System.out.print(",");
+				//break;
 			}
-			System.out.print(",");
+			//System.out.print(",");
 
 		}
 

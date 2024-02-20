@@ -20,7 +20,7 @@ public class HashtableConcepts {
 		ht1.put(3, "Appium");
 
 		System.out.println("using Hashtable class");
-		System.out.println("Size of a map: " + ht1.size());
+		System.out.println("Size of a Hashtable: " + ht1.size());
 		System.out.println("Elements of a Hashtable1: " + ht1);
 		System.out.println("HashCode: " + ht1.hashCode());
 
