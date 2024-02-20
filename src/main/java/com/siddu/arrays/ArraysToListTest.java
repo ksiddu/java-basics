@@ -1,4 +1,4 @@
-package com.siddu.java.collections;
+package com.siddu.arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;

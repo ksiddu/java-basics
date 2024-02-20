@@ -7,9 +7,17 @@ IMP LINKS
 	
 	
 	https://www.geeksforgeeks.org/collections-in-java-2/
+	
+	
+	
+2. Copy arrays
+
+    https://www.programiz.com/java-programming/copy-arrays
 
 
-
+3. Generics
+   
+   https://www.programiz.com/java-programming/generics
 
 
 DB QUERIES
